@@ -259,10 +259,11 @@ img{
 
 
 /* SITE-MAIN */
-.site-main{
-  margin-bottom: 54px;
-}
+
   /* today-news */
+  .today-news{
+    margin-bottom: 54px;
+  }
 .today-news-list{
   display: flex;
   flex-direction: row;
@@ -302,4 +303,52 @@ img{
   font-size: 14px;
   line-height: 17px;
   color: #6B6D97;
+}
+
+/* NOTIFICATION */
+.enable-Notification{
+  margin-bottom: 40px;
+}
+.Notification-wrapper{
+  background: rgba(239, 186, 84, 0.18);
+  border-radius: 5px;
+}
+.Notification-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 24px;
+}
+.Notification-text{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #000000;
+}
+.Notification-text::before{
+  content: "";
+  width: 31px;
+  height: 35px;
+  margin-right: 17px;
+  background-image: url("../images/bell-icon@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.Notification-button{
+  padding: 8px 10px;
+  background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #FFFFFF;
 }
