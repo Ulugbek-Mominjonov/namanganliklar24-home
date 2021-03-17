@@ -352,3 +352,132 @@ img{
   cursor: pointer;
   color: #FFFFFF;
 }
+
+/* MAIN-NEWS */
+
+.main-news{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* last-news */
+.last-news{
+  width: 814px;
+}
+.last-news-title{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.last-news-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.last-news-item{
+  margin-bottom: 20px;
+}
+.last-news-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  
+}
+.news-article{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+}
+.article-title{
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+}
+.article-text{
+  margin: 10px 0;
+}
+.article-date{
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688A4;
+}
+.article-date::before{
+  width: 18px;
+  height: 20px;
+  content: "";
+  background-image: url("../images/ic_outline-date-range.svg");
+  background-repeat: no-repeat;
+}
+.last-news-button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: none;
+  background: #295093;
+  border-radius: 5px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+/* popular */
+.popular{
+  width: 386px;
+  border-radius: 5px;
+}
+/* popular-news */
+.popular-news{
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #F6F6F9;
+}
+.popular-news-title{
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202020;
+}
+.popular-news-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.popular-news-item + .popular-news-item{
+  padding-top: 18px;
+  margin-top: 15px;
+  border-top: 4px solid #E4E4E4;
+}
+.popular-news-link{
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+}
+.popular-news-text{
+  margin: 0;
+  margin-bottom: 11px;
+}
+.popular-news-date{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7688A4;
+}
