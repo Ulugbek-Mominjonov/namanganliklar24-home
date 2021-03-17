@@ -56,10 +56,12 @@ img{
 .site-header{
   background: #F6F6F9;
   padding-bottom: 23px;
+  margin-bottom: 23px;
 }
 /* Introduction */
 .introduction{
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -152,6 +154,7 @@ img{
 }
 .site-list{
   display: flex;
+  flex-flow: wrap;
   align-items: center;
   justify-content: space-between;
   margin: 0;
@@ -171,4 +174,132 @@ img{
 }
 .site-link:hover{
   color: #295091;
+}
+
+/* CORAVIRUS */
+.coronavirus{
+  margin-bottom: 20px;
+}
+.corana-wrapper{
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  padding: 40px 24px;
+  background-color: #F6F6F9;
+}
+.corona{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.corona-title{
+  flex: 2;
+}
+.corona + .corona{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.corona  h4, .corona  p{
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+.corona  p{
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+}
+.corona::before{
+  content: "";
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+.corona-title::before{
+  width: 56px;
+  height: 45px;
+  background-image: url("../images/corona.png");
+}
+.corona-sick::before{
+  width: 37px;
+  height: 38px;
+  background-image: url("../images/medical-mask.png");
+}
+.corona-healed::before{
+  width: 37px;
+  height: 38px;
+  background-image: url("../images/cil_smile.png");
+}
+.corona-dead::before{
+  width: 38px;
+  height: 39px;
+  background-image: url("../images/died.png");
+}
+.corona-title a{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+.corona-sick{
+  color: #DB0000;
+  border-left: 2px solid #EB5569;
+}
+.corona-healed{
+  color: #05B135;
+  border-left: 2px solid #F4CCD1;
+}
+.corona-dead{
+  border-left: 2px solid #F4CCD1;
+}
+
+
+/* SITE-MAIN */
+.site-main{
+  margin-bottom: 54px;
+}
+  /* today-news */
+.today-news-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+}
+.today-news-item{
+  width: 386px;
+  margin-bottom: 18px;
+}
+.today-news-item:not(:nth-child(3n)){
+  margin-right: 21px;
+}
+.today-news-link{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #202020;
+}
+.today-post-text{
+  padding: 0;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+.today-post-date{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B6D97;
 }
