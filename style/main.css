@@ -537,6 +537,7 @@ img{
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
+  margin-bottom: 15px;
   border-bottom: 3px solid #133C82;
 }
 .footer-logo{
@@ -559,9 +560,11 @@ img{
   background: #FFFFFF;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: #295093;
+  cursor: pointer;
 }
 .footer-subscribe-button::before{
   display: inline-block;
@@ -571,4 +574,39 @@ img{
   height: 20px;
   vertical-align: middle;
   background-image: url("../images/cib_telegram.png");
+}
+/* footer-list */
+.footer-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.about-site{
+  width: 365px;
+  margin-right: 111px;
+}
+.about-site p{
+  margin-top: 0;
+}
+.notes-site{
+  margin-right: 111px;
+}
+.notes-site-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.notes-site-list li{
+  margin-bottom: 12px;
+}
+.notes-site-list a{
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
