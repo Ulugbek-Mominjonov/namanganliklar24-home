@@ -41,6 +41,20 @@ body{
   line-height: 23px;
   color: #515151;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
 .container{
   max-width: 1240px;
   padding-left: 20px;
@@ -48,10 +62,7 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-img{
-  max-width: 100%;
-  display: block;
-}
+
 /* HEADER */
 .site-header{
   background: #F6F6F9;
@@ -91,29 +102,33 @@ img{
   margin-left: auto;
 }
 .search {
-  height: 40px;
-  width: 40px;
+  display: flex;
+  padding: 11px;
   background-color: #fff;
   border-radius: 5px;
   border: none;
-  background-image: url(../images/search.png);
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: center center;
   margin-right: 22px;
   cursor: pointer;
+}
+.search::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .language{
   display: flex;
   align-items: center;
   background-color: #fff;
-  height: 40px;
+  padding: 11px 8px;
   margin-right: 22px;
   border-radius: 5px;
   border: none;
   font-size: 16px;
   line-height: 19px;
-  color: #535353;
+  color: #b68a8a;
   cursor: pointer;
 }
 .language::before{
@@ -127,11 +142,11 @@ img{
   background-repeat: no-repeat;
 }
 .subscribe{
-  height: 40px;
   display: flex;
-  padding: 10px;
+  padding: 11px;
   align-items: center;
   text-decoration: none;
+  border: none;
   background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
   border-radius: 5px;
   font-size: 16px;
@@ -199,7 +214,7 @@ img{
   padding-left: 30px;
   padding-right: 30px;
 }
-.corona  h4, .corona  p{
+.corona  h3, .corona  p{
   padding: 0;
   margin: 0;
   font-weight: 400;
@@ -292,6 +307,9 @@ img{
   padding: 0;
   margin-top: 11px;
   margin-bottom: 11px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 500;
 }
 .today-post-date{
   font-weight: normal;
@@ -392,6 +410,7 @@ img{
 }
 .article-title{
   margin: 0;
+  font-weight: 500;
   font-size: 17px;
   line-height: 20px;
   color: #202020;
@@ -485,7 +504,7 @@ img{
 .suggetion-subscribe-img{
   width: 225px;
   height: 177px;
-  background-image: url("../images/Group\ 1.png");
+  background-image: url("../images/Group1.png");
 }
 .suggetion-subscribe-info{
   width: 526px;
@@ -497,6 +516,7 @@ img{
 .suggetion-subscribe-title{
   margin: 0;
   padding: 0;
+  font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   color: #295093
@@ -571,6 +591,7 @@ img{
   padding: 0;
   margin: 0;
   list-style: none;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
@@ -579,7 +600,7 @@ img{
   width: 365px;
   margin-right: 111px;
 }
-.about-site p{
+.about-site p, .about-site h3{
   margin-top: 0;
 }
 .notes-site{
